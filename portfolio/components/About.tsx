@@ -54,7 +54,7 @@ const About = () => {
                     <div className='flex flex-col gap-5'>
                         <div className='border-2 border-primary rounded-xl flex flex-col py-1 w-24 sm:w-32 md:w-full px-3 sm:px-5 md:px-10 items-center justify-center'>
                             <span className='text-4xl sm:text-6xl md:text-7xl'><SiPrisma/></span>
-                            <span className='text-xs sm:text-sm'>Prisma ORM</span>
+                            <span className='text-xs sm:text-sm'>Prisma</span>
                         </div>
                         <div className='border-2 border-primary rounded-xl flex flex-col py-1 w-24 sm:w-32 md:w-full px-3 sm:px-5 md:px-10 items-center justify-center'>
                             <span className='text-4xl sm:text-6xl md:text-7xl'><RiDatabase2Fill/></span>
@@ -80,7 +80,7 @@ const About = () => {
                         </div>
                         <div className='border-2 border-primary rounded-xl flex flex-col py-1 w-24 sm:w-32 md:w-full px-3 sm:px-5 md:px-10 items-center justify-center'>
                             <span className='text-4xl sm:text-6xl md:text-7xl'><RiTailwindCssFill/></span>
-                            <span className='text-xs sm:text-sm'>Tailwind CSS</span>
+                            <span className='text-xs sm:text-sm'>Tailwind</span>
                         </div>
                     </div>
                 </div>
