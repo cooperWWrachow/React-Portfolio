@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
         </nav>
         <aside>
-            <p className='text-xl'><span className='text-primary'>Cooper Rachow</span> &copy; 2024</p>
+            <p className='text-xl'><span className='text-primary'>Cooper Rachow</span> &copy; 2024-{new Date().getFullYear()}</p>
         </aside>
     </footer>
   )
