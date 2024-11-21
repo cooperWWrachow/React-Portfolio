@@ -13,7 +13,7 @@ interface ProjectProps {
 }
 
 const NewProject = ({name, image, type, desc, github, live, count}: ProjectProps) => {
-    var order;
+    let order;
     if (count % 2 == 0){
         order = true
     } else {
