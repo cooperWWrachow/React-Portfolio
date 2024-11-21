@@ -24,7 +24,7 @@ const About = () => {
                     <div className='flex items-center justify-center'>
                         <div className="avatar">
                             <div className="mask mask-squircle w-56 sm:w-60 md:w-64">
-                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                <img src="/coop.jpg" />
                             </div>
                         </div>
                     </div>
