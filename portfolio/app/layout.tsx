@@ -16,7 +16,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`antialiased`}
-        data-theme="aqua"
+        suppressHydrationWarning={true}
+        data-theme="coffee"
       >
         {children}
       </body>
