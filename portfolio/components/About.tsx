@@ -15,9 +15,9 @@ import { FaAws } from "react-icons/fa";
 const About = () => {
   return (
     <div id='about'>
-        <div className='p-8 md:px-16 mt-14'>
-            <div className='text-center mb-28'>
-                <h3 className='text-5xl md:text-6xl'>About</h3>
+        <div className='px-8 pt-8 md:px-16 mt-14'>
+            <div className='text-center mb-20'>
+                <h3 className='text-5xl md:text-6xl underline decoration-8 underline-offset-[20px] decoration-secondary'>About</h3>
             </div>
             <div className='grid grid-cols-6 gap-8'>
                 <div className='col-span-6 xl:col-span-3 flex flex-col items-center justify-center'>

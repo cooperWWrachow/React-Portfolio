@@ -11,8 +11,8 @@ const Project = () => {
 
   return (
     <div id='projects'>
-        <div className='text-center mb-28 pt-8 mt-14'>
-            <h3 className='text-5xl md:text-6xl'>Projects</h3>
+        <div className='text-center mb-20 pt-8 mt-14'>
+            <h3 className='text-5xl md:text-6xl underline decoration-8 underline-offset-[20px] decoration-secondary'>Projects</h3>
         </div>
         <div className='space-y-16'>
           {projects.map((project, index) => (
