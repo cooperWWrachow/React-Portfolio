@@ -31,7 +31,7 @@ const About = () => {
                     <div className='text-center lg:text-start text-xl pt-10 w-full sm:w-4/5'>
                         While attending Louisiana Tech University, I chose to deepen my knowledge in 
                         Computer Science to entertain my passion for problem solving, creativity, and logical interpretation.
-                        I design and develop full-stack web application with two main goals: Performance and Usability. I take 
+                        I design and develop full-stack web applications with two main goals: Performance and Usability. I take 
                         pride in my work and contributing my skills to the best of my ability.
                     </div>
                 </div>

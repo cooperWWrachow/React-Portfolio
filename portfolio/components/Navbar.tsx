@@ -33,7 +33,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar bg-base-300 bg-opacity-95 z-50 shadow-lg sticky top-0 flex items-center justify-center lg:items-end lg:justify-end md:pr-14">
+    <div className="navbar bg-base-300 bg-opacity-95 z-40 shadow-lg sticky top-0 flex items-center justify-center lg:items-end lg:justify-end md:pr-14">
         <div className="flex-none">
             <ul className="menu menu-horizontal">
                 <li><a className={`text-lg sm:text-2xl ${activeSection == 'home' && 'text-primary'}`} href='#home'>Home</a></li>
