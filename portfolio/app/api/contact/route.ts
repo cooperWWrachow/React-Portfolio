@@ -35,7 +35,7 @@ const sendEmail = async ({name, email, message}: Email) => {
   try {
     
     // Send email via Resend
-    const data = await resend.emails.send({
+    await resend.emails.send({
       from: 'Resend <onboarding@resend.dev>',
       to: ['cooper.j.rachow@gmail.com'],
       subject: 'Portfolio Contact',
