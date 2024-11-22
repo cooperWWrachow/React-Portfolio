@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
       }
     } catch (error) {
       return NextResponse.json(
-        { success: false, message: "Invalid request data" },
+        { success: false, message: "Invalid request data", error: error  },
         { status: 400 }
       );
     }
@@ -35,7 +35,7 @@ const sendEmail = async ({name, email, message}: Email) => {
   try {
     
     // Send email via Resend
-    const { data, error } = await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Resend <onboarding@resend.dev>',
       to: ['cooper.j.rachow@gmail.com'],
       subject: 'Portfolio Contact',
@@ -44,6 +44,6 @@ const sendEmail = async ({name, email, message}: Email) => {
 
     return NextResponse.json({ success: true, message: "Email sent successfully" });
   } catch (error) {
-    return NextResponse.json({ success: false, message: "Failed to send email" });
+    return NextResponse.json({ success: false, message: "Failed to send email", error: error });
   }
 }
