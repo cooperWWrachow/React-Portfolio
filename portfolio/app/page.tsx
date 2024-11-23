@@ -9,18 +9,18 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useState("autumn"); // Default theme
+  const [theme, setTheme] = useState("coffee"); // Default theme
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'autumn'
+    const savedTheme = localStorage.getItem('theme') || 'coffee'
     setTheme(savedTheme)
     document.documentElement.setAttribute("data-theme", savedTheme);
     setIsLoading(false)
   }, [])
 
   const updateTheme = () => {
-    const newTheme = theme === 'coffee' ? 'autumn' : 'coffee'
+    const newTheme = theme === 'autumn' ? 'coffee' : 'autumn'
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);

@@ -6,7 +6,8 @@ const Project = () => {
 
   const projects = [
     {name: 'Rate My Students', image: "/rms.png", type: "Social Media App", desc: 'Ever heard of "Rate My Professors"? Here, teachers have the ability to leave ratings on their students for all to see!', github: 'https://github.com/cooperWWrachow/Rate-My-Students', live: 'https://www.ratemystudents.xyz/' },
-    {name: 'ClimaWear', image: "/climawear.png", type: "Personal Care App", desc: 'With ClimaWear, turn your closet virtual! Gain the ability to be recommended a new outfit every day based on the weather.', github: 'https://github.com/cooperWWrachow/ClimaWear', live: 'https://www.climawear.cloud/' }
+    {name: 'ClimaWear', image: "/climawear.png", type: "Personal Care App", desc: 'With ClimaWear, turn your closet virtual! Gain the ability to be recommended a new outfit every day based on the weather.', github: 'https://github.com/cooperWWrachow/ClimaWear', live: 'https://www.climawear.cloud/' },
+    {name: 'iter8or', image: "/iter8or.png", type: "Scrum Retro App", desc: 'Iter8or revolutionizes the way teams conduct sprint retrospectives. Confidently state what you loved, loathed, longed, and learned with your team membrs!', github: 'https://github.com/cooperWWrachow/iter8or-GDIT', live: 'https://github.com/cooperWWrachow/iter8or-GDIT' },
   ]
 
   return (
