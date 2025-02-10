@@ -1,6 +1,7 @@
 'use client';
 import React from 'react'
 import NewProject from './projects/NewProject'
+import { motion } from 'framer-motion';
 
 const Project = () => {
 
@@ -10,6 +11,10 @@ const Project = () => {
     {name: 'iter8or', image: "/iter8or.png", type: "Scrum Retro App", desc: 'Iter8or revolutionizes the way teams conduct sprint retrospectives. Confidently state what you loved, loathed, longed, and learned with your team members!', github: 'https://github.com/cooperWWrachow/iter8or-GDIT', live: 'https://github.com/cooperWWrachow/iter8or-GDIT' },
   ]
 
+  const isIndexEven = (index: number): boolean => {
+    return index % 2 == 0;
+  }
+
   return (
     <div id='projects'>
         <div className='text-center mb-20 pt-8 mt-14'>
@@ -17,9 +22,15 @@ const Project = () => {
         </div>
         <div className='space-y-16'>
           {projects.map((project, index) => (
-            <div key={`project-${index}`}>
+            <motion.div 
+              key={`project-${index}`}
+              initial={ isIndexEven(index) ? {opacity: 0, x: -100} : {opacity: 0, x: 100}}
+              whileInView={{ opacity: 1, x: 0}}
+              transition={{ duration: 1, delay: 0.5, ease: "easeIn"}}
+              viewport={{ once: true }}
+            >
               <NewProject name={project.name} type={project.type} image={project.image} desc={project.desc} github={project.github} live={project.live} count={index}/>
-            </div>
+            </motion.div>
           ))}
         </div>
     </div>
